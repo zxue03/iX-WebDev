@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="self-intro.css" rel="stylesheet">
+
+    <title>
+        Zhicheng self-introduction
+    </title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Greetings from Zhicheng!</h1>
+    </header>
+    <img src="Zhicheng.jpg">
+    <div class="Github">
+        My Github: <a href="https://github.com/zxue03">zxue03</a>
+    </div>
+
+    <article>
+        <b>A little about myself</b>
+        Hello everyone, my name is Zhicheng, but feel free to call me Louis.
+        I'm a rising sophomore at Tufts University major in CS.
+        Learning programming over the past year has changed the way I think and approach problems,
+        and I'm eager to get into web dev this summer.
+        Outside of academics,
+        I enjoy playing electric guitar &#127928(huge Rock fan) and cycling &#128692 on the weekends.
+    </article>
+
+    <form onsubmit="handleSubmit(event)">
+        <h2>Your Infor</h2>
+        <label for="name">Name :</label>
+        <input type="text" id="name">
+        <br>
+        Use insta?
+        <input type="radio" id="yes" name="insUsage" onclick="askForPermission()">
+        <label for="yes">yes</label>
+        <input type="radio" id="no" name="insUsage" onclick="resetEle(); noInsMsg()">
+        <label for="no">no</label>
+
+
+        <div style="display: none" id="permissionEle">
+            Can I add you?
+            <input type="radio" id="yes" name="permission" onclick="askForAccount()">
+            <label for="yes">yes</label>
+            <input type="radio" id="no" name="permission" onclick="noInsMsg()">
+            <label for="no">no</label>
+        </div>
+
+        <div style="display: none" id="accountEle">
+            <label for="account">Your insta :</label>
+            <input type="text" id="account">
+            <br>
+            <input type="checkbox" id="consent" name="consent">
+            <label for="consent">I consent to give you my instagram</label>
+            <div id="submitButton">
+                <button style="font-size: 15px; margin-top: 10px;" type="submit">Submit</button>
+            </div>
+
+        </div>
+
+        <p id="Msg"></p>
+
+
+    </form>
+
+    <script src="self-intro.js"></script>
+
+
+</body>
+
+</html>
