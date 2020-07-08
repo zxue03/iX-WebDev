@@ -3,7 +3,11 @@
 <html lang="en">
 
 <head>
-    <link href="self-intro.css" rel="stylesheet">
+    <!-- <link href="self-intro.css" rel="stylesheet"> -->
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+    crossorigin="anonymous">
 
     <title>
         Zhicheng self-introduction
@@ -11,17 +15,20 @@
 
 </head>
 
-<body>
+<body class="text-center bg-info">
     <header>
-        <h1>Greetings from Zhicheng!</h1>
+        <h1 class="text-light">Greetings from Zhicheng!</h1>
     </header>
-    <img src="Zhicheng.jpg">
-    <div class="Github">
+    <img src="Zhicheng.jpg" 
+    class="rounded-circle border border-white w-25" 
+    alt="my photo">
+    <div class="font-weight-bold">
         My Github: <a href="https://github.com/zxue03">zxue03</a>
     </div>
-
-    <article>
+    <br>
+    <article class="">
         <b>A little about myself</b>
+        <br>
         Hello everyone, my name is Zhicheng, but feel free to call me Louis.
         I'm a rising sophomore at Tufts University major in CS.
         Learning programming over the past year has changed the way I think and approach problems,
@@ -31,6 +38,7 @@
     </article>
 
     <form onsubmit="handleSubmit(event)">
+        <div class="form-group">
         <h2>Your Infor</h2>
         <label for="name">Name :</label>
         <input type="text" id="name">
@@ -63,6 +71,7 @@
         </div>
 
         <p id="Msg"></p>
+    </div>
 
 
     </form>

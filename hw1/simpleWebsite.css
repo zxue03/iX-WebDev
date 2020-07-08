@@ -1,0 +1,48 @@
+main {
+  text-align: center;
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 1.7fr 1fr 3.2fr 1fr 1.3fr 1fr 0.7fr;
+  /* grid-template-rows: auto; */
+  grid-gap: 0;
+}
+
+.cardGrid {
+  padding: 20 70px;
+  background-color: rgb(65, 63, 63);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 0.7fr));
+  grid-gap: 3em;
+}
+
+img {
+  width: 100%;
+  height: fit-content;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+}
+
+.b1 {
+  background-color: rgb(65, 63, 63);
+  color: whitesmoke;
+}
+
+.b2 {
+  background-color: whitesmoke;
+  color: rgb(65, 63, 63);
+}
+
+.b3 {
+  background-color: rgb(87, 159, 226);
+  color: whitesmoke;
+}
+
+.b4 {
+  background-color: black;
+  color: whitesmoke;
+}
