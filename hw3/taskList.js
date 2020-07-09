@@ -7,7 +7,19 @@ class UI {
         <td><a class="edit" style="cursor: pointer;" >&#9997</a></td>
       `;
 
+
+
+
+    for(var i = 0; i < list.children.length; i++){
+        if(list.children[i].children[0].innerHTML == "Editing..."){
+            list.children[i].children[0].innerHTML = row.children[0].innerHTML;
+            return;
+        }
+    }
+
     list.appendChild(row);
+
+
   }
 
   clearFields() {
@@ -15,10 +27,11 @@ class UI {
   }
 
   editTask(target){
+    const list = document.getElementById("task-list");
     if (target.className === "edit") {
 
        document.getElementById("task-input").value = target.parentElement.parentElement.children[0].innerHTML;
-        target.parentElement.parentElement.remove();
+        target.parentElement.parentElement.children[0].innerHTML="Editing...";
       }
   }
 }
