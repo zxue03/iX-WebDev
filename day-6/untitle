@@ -1,0 +1,25 @@
+tasks:{
+    task1:{
+        id: 1
+        title: "new-task"
+        priorityLevel: "H"
+    }
+}
+priority: {
+    H: {
+        color: "red"
+    },
+    M:{
+        color: "orange"
+    },
+    L: {
+        color: "green"
+    }
+}
+
+const priority = database.ref(priority).once('value' (data)=>{
+    return data.val();
+})
+
+task1;
+const color = priority[task1.priorityLevel]
